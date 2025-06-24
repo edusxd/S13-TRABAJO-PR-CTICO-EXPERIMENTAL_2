@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="../css/arreglos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios JavaScript</h1>
+
+        <!-- Ejercicio 1 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 1: Crear arreglo con valores</h3>
+            <div class="form-group">
+                <label>Frutas separadas por ;</label>
+                <input type="text" id="frutas1" placeholder="manzana;banana;uva">
+            </div>
+            <button onclick="ejercicio1()"><span>Ejecutar</span></button>
+            <div id="result1" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 2 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 2: Agregar elementos con .push()</h3>
+            <div class="form-group">
+                <label>Números separados por ;</label>
+                <input type="text" id="numeros2" placeholder="1;2">
+            </div>
+            <div class="form-group">
+                <label>Número a agregar</label>
+                <input type="number" id="agregar2" placeholder="3">
+            </div>
+            <button onclick="ejercicio2()"><span>Ejecutar</span></button>
+            <div id="result2" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 3 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 3: Agregar elementos sin .push()</h3>
+            <div class="form-group">
+                <label>Primer número</label>
+                <input type="number" id="num1_3" placeholder="10">
+            </div>
+            <div class="form-group">
+                <label>Segundo número</label>
+                <input type="number" id="num2_3" placeholder="20">
+            </div>
+            <button onclick="ejercicio3()"><span>Ejecutar</span></button>
+            <div id="result3" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 4 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 4: Crear y mostrar cadena</h3>
+            <div class="form-group">
+                <label>Saludo</label>
+                <input type="text" id="saludo4" placeholder="Hola clase">
+            </div>
+            <button onclick="ejercicio4()"><span>Ejecutar</span></button>
+            <div id="result4" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 5 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 5: Cantidad de caracteres</h3>
+            <div class="form-group">
+                <label>Palabra</label>
+                <input type="text" id="palabra5" placeholder="Programación">
+            </div>
+            <button onclick="ejercicio5()"><span>Ejecutar</span></button>
+            <div id="result5" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 6 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 6: Mostrar cada letra</h3>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" id="nombre6" placeholder="Luis">
+            </div>
+            <button onclick="ejercicio6()"><span>Ejecutar</span></button>
+            <div id="result6" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 7 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 7: Separar letras con .split()</h3>
+            <div class="form-group">
+                <label>Palabra</label>
+                <input type="text" id="palabra7" placeholder="hola">
+            </div>
+            <button onclick="ejercicio7()"><span>Ejecutar</span></button>
+            <div id="result7" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 8 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 8: Convertir cadena a números</h3>
+            <div class="form-group">
+                <label>Números separados por ;</label>
+                <input type="text" id="numeros8" placeholder="10;30;40;50">
+            </div>
+            <button onclick="ejercicio8()"><span>Ejecutar</span></button>
+            <div id="result8" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 9 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 9: Recorrer arreglo con for</h3>
+            <div class="form-group">
+                <label>Frutas separadas por ;</label>
+                <input type="text" id="frutas9" placeholder="manzana;banana;uva">
+            </div>
+            <button onclick="ejercicio9()"><span>Ejecutar</span></button>
+            <div id="result9" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 10 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 10: Recorrer arreglo con while</h3>
+            <div class="form-group">
+                <label>Frutas separadas por ;</label>
+                <input type="text" id="frutas10" placeholder="manzana;banana;uva">
+            </div>
+            <button onclick="ejercicio10()"><span>Ejecutar</span></button>
+            <div id="result10" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 11 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 11: Mostrar letras con for</h3>
+            <div class="form-group">
+                <label>Palabra</label>
+                <input type="text" id="palabra11" placeholder="sol">
+            </div>
+            <button onclick="ejercicio11()"><span>Ejecutar</span></button>
+            <div id="result11" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 12 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 12: Mostrar letras con while</h3>
+            <div class="form-group">
+                <label>Palabra</label>
+                <input type="text" id="palabra12" placeholder="sol">
+            </div>
+            <button onclick="ejercicio12()"><span>Ejecutar</span></button>
+            <div id="result12" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 13 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 13: Contar vocales</h3>
+            <div class="form-group">
+                <label>Palabra</label>
+                <input type="text" id="palabra13" placeholder="programacion">
+            </div>
+            <button onclick="ejercicio13()"><span>Ejecutar</span></button>
+            <div id="result13" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 14 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 14: Comparar palabras</h3>
+            <div class="form-group">
+                <label>Primera palabra</label>
+                <input type="text" id="palabra14_1" placeholder="casa">
+            </div>
+            <div class="form-group">
+                <label>Segunda palabra</label>
+                <input type="text" id="palabra14_2" placeholder="cosa">
+            </div>
+            <button onclick="ejercicio14()"><span>Ejecutar</span></button>
+            <div id="result14" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 15 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 15: Divisores de números</h3>
+            <div class="form-group">
+                <label>Números separados por ;</label>
+                <input type="text" id="numeros15" placeholder="6;10">
+            </div>
+            <button onclick="ejercicio15()"><span>Ejecutar</span></button>
+            <div id="result15" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 16 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 16: Sumar divisores</h3>
+            <div class="form-group">
+                <label>Números separados por ;</label>
+                <input type="text" id="numeros16" placeholder="6;10">
+            </div>
+            <button onclick="ejercicio16()"><span>Ejecutar</span></button>
+            <div id="result16" class="resultado" style="display:none;"></div>
+        </div>
+
+        <!-- Ejercicio 17 -->
+        <div class="ejercicio">
+            <h3>Ejercicio 17: Números perfectos</h3>
+            <div class="form-group">
+                <label>Números separados por ;</label>
+                <input type="text" id="numeros17" placeholder="6;10;28">
+            </div>
+            <button onclick="ejercicio17()"><span>Ejecutar</span></button>
+            <div id="result17" class="resultado" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script src="../js/ej_arreglos.js"></script>
+</body>
+</html>
